@@ -1,10 +1,24 @@
 /*
-#fcf4d0 tan
-#506d7d blue grey
-#97cfb9 green
-#fbb16f orange
+#8DB8C6 blue
+#EADEA8 yellow
+#A48BB2 purple
+#97CFB9 green
 */
 
+body {
+  background-color: #d0d6d6;
+}
+
+h1, h2, h3, h4 {
+  text-align: center;
+}
+
+img {
+  width: 90%;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
 
 .quiz {
   display: none;
@@ -15,9 +29,21 @@
 }
 
 .start {
-  color: #97cfb9;
+  color: #8DB8C6;
 }
 
 .start:hover {
   text-decoration: underline;
+}
+
+#python {
+  background-color: #8DB8C6;
+}
+
+#javascript {
+  background-color: #EADEA8;
+}
+
+#csharp {
+  background-color: #A48BB2;
 }

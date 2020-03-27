@@ -7,6 +7,12 @@ $(document).ready(function() {
     $(".quiz").show();
   })
 
+  $(".start#all").click(function(){
+    $(".intro").hide();
+    $(".quiz").hide();
+    $(".results").show();
+  })
+
   $("form#responses").submit(function(event){
     event.preventDefault();
 
