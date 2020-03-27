@@ -1,0 +1,21 @@
+/*
+#fcf4d0 tan
+#506d7d blue grey
+#97cfb9 green
+#fbb16f orange
+*/
+.quiz {
+  display: none;
+}
+
+.results {
+  display: none;
+}
+
+.start {
+  color: #97cfb9;
+}
+
+.start:hover {
+  text-decoration: underline;
+}
