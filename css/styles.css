@@ -51,7 +51,7 @@ button, .btn, #refresh {
   margin-right: auto;
 }
 
-.quiz, .results, #refresh {
+.quiz, .results, #refresh, #greeting{
   display: none;
 }
 
