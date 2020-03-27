@@ -1,16 +1,11 @@
-/*
-#8DB8C6 blue
-#EADEA8 yellow
-#A48BB2 purple
-#97CFB9 green
-*/
-
 body {
+  font-family: Arial, Helvetica, sans-serif;
   background-color: #d0d6d6;
 }
 
 h1, h2, h3, h4 {
   text-align: center;
+  font-weight: bolder;
 }
 
 img {
@@ -28,11 +23,15 @@ img {
 
 .gif {
   width: 60%;
-  margin: 5%;
+  margin: 10%;
   border: 5px solid #d0d6d6;
   display: block;
   margin-left: auto;
   margin-right: auto;
+}
+
+#csharp .gif {
+  margin: 20%;
 }
 
 button, .btn, #refresh {
@@ -82,11 +81,13 @@ button, .btn, #refresh {
   color: white;
 }
 
-#javascript {
-  background-color: #EADEA8;
+#javascript .panel-heading {
+  background-color: rgb(207, 181, 61);
+  color: white;
 }
 
-#csharp {
-  background-color: #A48BB2;
+#csharp .panel-heading {
+  background-color: rgb(179, 137, 219);
+  color: white;
 }
 
