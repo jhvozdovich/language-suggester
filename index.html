@@ -26,7 +26,7 @@
         <h1>Quiz Time!</h1>
         <form id="responses">
           <div class="question">
-            <h4>Select a difficulty level:</h4>
+            <h4>Select a <em>difficulty level</em>:</h4>
             <div class="radio">
               <label>
                 <input type="radio" name="difficulty" value="easy" checked>
@@ -45,6 +45,15 @@
                   Hard
               </label>
             </div>
+          </div>
+
+          <div class="question">
+            <h4>Select your <em>main interests</em>.</h4>
+            <select id="interest">
+              <option>Front-End</option>
+              <option>Back-End</option>
+              <option>Both</option>
+            </select>
           </div>
           
           <button type="submit" class="btn">Submit Quiz</button>
