@@ -15,13 +15,13 @@
           <div class="panel-heading">
             <h1>Programming Languages</h1>
             <h1>Where to Start?</h1>
-            <h3 class="start">Take the Quiz and Find Out!</h3>
+            <h3 class="click start">Take the Quiz and Find Out!</h3>
           </div>
           <p class="panel-body">
             Congratulations on taking these first steps of your coding journey! With any adventure, it is hard to know where to begin, 
             especially if there are so many options. Take this quiz to determine which language might be the best for you. 
             The beauty of this test is that there are no wrong answers! And there is always time to diverge, refresh your 
-            knowledge, or go down a new path! So what are you waiting for? <strong class="start">Let’s get started.</strong>
+            knowledge, or go down a new path! So what are you waiting for? <strong class="click start">Let’s get started.</strong>
           </p>
         </div>
         <br>
@@ -38,92 +38,161 @@
         </div>
         <br>
         <div class="panel panel-default">
-          <h3 class="panel-body">Or learn about all of our options <strong class="start" id="all">HERE</strong></h3>
+          <h3 class="panel-body">Or learn about all of our options <strong class="click" id="all">HERE</strong></h3>
         </div>
       </div>
 
 
       <div class="quiz">
-        <h1>Quiz Time!</h1>
+        <div class="row">
+          <div class="col-xs-2"></div>
+          <div class="col-xs-8">
+            <div class="panel panel-body">
+              <h1>Quiz Time!</h1>
+            </div>
+          </div>
+          <div class="col-xs-2"></div>
+        </div>
         <form id="responses">
-          <div class="question">
-            <h4>What is your <em>goal</em>?</h4>
-            <select id="goal">
-              <option value="developper">Become a professional developper</option>
-              <option value="startup">Run a startup</option>
-              <option value="maker">To make new things</option>
-            </select>
-
+          
+          <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+              <div class="question panel panel-default">
+                <div class="panel-heading">
+                <h4>What is your <em>goal</em>?</h4>
+                </div>
+                <div class="dropdown panel-body">
+                  <select id="goal">
+                    <option value="developper">To become a professional developper</option>
+                    <option value="startup">To run a startup</option>
+                    <option value="maker">To make new things</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2"></div>
           </div>
 
-
-          <div class="question">
-            <h4>Select a <em>difficulty level</em>:</h4>
-            <div class="radio">
-              <label>
-                <input type="radio" name="difficulty" value="easy" checked>
-                Easy
-              </label>
+          <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">
+              <div class="question panel panel-default">
+                <div class="panel-heading">
+                  <h4>Select a <em>difficulty level</em>:</h4>
+                </div>
+                <div class="multiple panel-body">
+                  <div class="row">
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-2">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="difficulty" value="easy" checked>
+                          Easy
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="difficulty" value="medium">
+                          Medium
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="difficulty" value="hard">
+                            Hard
+                        </label>
+                      </div>
+                    </div>
+                    <div col="col-sm-5"></div>
+                   </div> 
+                </div>
+              </div>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="difficulty" value="medium">
-                Medium
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="difficulty" value="hard">
-                  Hard
-              </label>
-            </div>
+            <div class="col-xs-2"></div>
           </div>
 
-          <div class="question">
-            <h4>Select your <em>main interests</em>.</h4>
-            <select id="interest">
-              <option>Front-End</option>
-              <option>Back-End</option>
-              <option>Both</option>
-            </select>
+          <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">          
+              <div class="question panel panel-default">
+                <div class="panel-heading">
+                  <h4>Select your <em>main interests</em>.</h4>
+                </div>
+                <div class="dropdown panel-body">
+                  <select id="interest">
+                    <option>Front-End</option>
+                    <option>Back-End</option>
+                    <option>Both</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <div class="col-xs-2"></div>
+          </div> 
+
+          <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">          
+              <div class="question panel panel-default">
+                <div class="panel-heading">
+                  <h4>What are you most interested in <em>creating</em>?</h4>
+                </div>
+                <div class="multiple panel-body">
+                  <div class="row">
+                    <div class="col-sm-5"></div>
+                    <div class="col-sm-4">
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="project" value="games" checked>
+                          Games
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="project" value="websites">
+                          Websites
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="project" value="desktop">
+                            Desktop Software
+                        </label>
+                      </div>
+                      <div class="radio">
+                        <label>
+                          <input type="radio" name="project" value="data">
+                            Data Analysis Software
+                        </label>
+                      </div>
+                    </div> 
+                    <div class="col-sm-3"></div>
+                  </div>  
+                </div>
+              </div>
+            </div> 
+            <div class="col-xs-2"></div> 
           </div>
 
-          <div class="question">
-            <h4>What are you most interested in <em>creating</em>?</h4>
-            <div class="radio">
-              <label>
-                <input type="radio" name="project" value="games" checked>
-                Games
-              </label>
+          <div class="row">
+            <div class="col-xs-2"></div>
+            <div class="col-xs-8">          
+              <div class="question panel panel-default">
+                <div class="panel-heading">
+                  <h4>What <em>platform</em> would you prefer to start on?</h4>
+                </div>
+                <div class="dropdown panel-body">
+                  <select id="platform">
+                    <option>Mobile</option>
+                    <option>Web</option>
+                    <option>Desktop</option>
+                  </select>
+                </div>
+              </div>
             </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="project" value="websites">
-                Websites
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="project" value="desktop">
-                  Desktop Software
-              </label>
-            </div>
-            <div class="radio">
-              <label>
-                <input type="radio" name="project" value="data">
-                  Data Analysis Software
-              </label>
-            </div>
-          </div>
-
-          <div class="question">
-            <h4>What <em>platform</em> would you prefer to start on?</h4>
-            <select id="platform">
-              <option>Mobile</option>
-              <option>Web</option>
-              <option>Desktop</option>
-            </select>
-          </div>
+            <div class="col-xs-2"></div>
+          </div>  
           
           <button type="submit" class="btn">Submit Quiz</button>
         </form>
@@ -270,6 +339,8 @@
           <p>StackOverflow - Evernote - Microsoft Visual Studio</p>
         </div>
       </div>
+
+      <button class="results click" id="refresh">Click here to start again!</button>
 
     
 

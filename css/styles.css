@@ -20,6 +20,12 @@ img {
   margin-right: auto;
 }
 
+button, .btn {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 .quiz {
   display: none;
 }
@@ -28,13 +34,22 @@ img {
   display: none;
 }
 
-.start {
+.refresh{
+  display: none;
+}
+
+.click {
   color: #8DB8C6;
 }
 
-.start:hover {
+.click:hover {
   text-decoration: underline;
 }
+
+.dropdown {
+  text-align: center;
+}
+
 
 #python {
   background-color: #8DB8C6;

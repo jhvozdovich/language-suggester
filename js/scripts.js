@@ -7,7 +7,7 @@ $(document).ready(function() {
     $(".quiz").show();
   })
 
-  $(".start#all").click(function(){
+  $("#all").click(function(){
     $(".intro").hide();
     $(".quiz").hide();
     $(".results").show();
@@ -36,5 +36,13 @@ $(document).ready(function() {
       alert("Wow you have some diverse tastes! We're not sure where to place you. Here are all of our options!")
       $(".results").show();
     }
+
+    $("#refresh").show();
+    
   })  
+
+  $("#refresh").click(function(){
+    location.reload();
+  })
+
 })
