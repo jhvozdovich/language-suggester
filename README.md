@@ -37,6 +37,17 @@ Git and GitHub
 JavaScript
 jQuery
 
+### Websites Referenced for Content
+
+* [Inc General Infographic](https://www.inc.com/larry-kim/how-to-choose-which-programming-language-to-learn-infographic.html)
+* [Mission.org General Article](https://medium.com/the-mission/new-to-coding-which-programming-language-is-right-for-you-f506638aa36e)
+* [Learning Hub Popular Languages](https://learn.g2.com/most-popular-programming-languages)
+* [Dev Top 5 Languages](https://dev.to/selawsky/top-5-popular-programming-languages-to-learn-1gij)
+* [PluralSight C#](https://www.pluralsight.com/blog/software-development/everything-you-need-to-know-about-c-)
+* [Data Flair JavaScript](https://data-flair.training/blogs/advantages-disadvantages-javascript/)
+* [Guru99 Java vs C#](https://www.guru99.com/java-vs-c-sharp-key-difference.html#11)
+* [Codementor Language Quiz](http://www.bestprogramminglanguagefor.me/)
+
 #### License
 
 This software is licensed under the MIT license.
