@@ -24,14 +24,19 @@ img {
 .gif {
   width: 60%;
   margin: 10%;
+  margin-bottom: 5%;
   border: 5px solid #d0d6d6;
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 
+#javascript .gif {
+  margin-top: 5%;
+}
+
 #csharp .gif {
-  margin: 20%;
+  margin-top: 15%;
 }
 
 button, .btn, #refresh {
