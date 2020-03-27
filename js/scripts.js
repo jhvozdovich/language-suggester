@@ -45,11 +45,9 @@ $(document).ready(function() {
     $("#greeting").show();
 
     $("#refresh").show();
-    
   })  
 
   $("#refresh").click(function(){
     location.reload();
   })
-
 })
