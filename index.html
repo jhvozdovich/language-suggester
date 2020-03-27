@@ -4,6 +4,7 @@
     <link href="./css/bootstrap.css" rel="stylesheet" type="text/css">
     <link href="./css/styles.css" rel="stylesheet" type="text/css">
     <script src="./js/jquery-3.4.1.js"></script>
+    <script src="./js/bootstrap.js"></script>
     <script src="./js/scripts.js"></script>
     <title>Programming Language Selector</title>
   </head>
@@ -23,25 +24,176 @@
 
       <div class="quiz">
         <h1>Quiz Time!</h1>
-        <form>
+        <form id="responses">
+          <div class="question">
+            <h4>Select a difficulty level:</h4>
+            <div class="radio">
+              <label>
+                <input type="radio" name="difficulty" value="easy" checked>
+                Easy
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="difficulty" value="medium">
+                Medium
+              </label>
+            </div>
+            <div class="radio">
+              <label>
+                <input type="radio" name="difficulty" value="hard">
+                  Hard
+              </label>
+            </div>
+          </div>
           
+          <button type="submit" class="btn">Submit Quiz</button>
         </form>
       </div>
 
 
 
-      <div class="results">
-        <div id="python">
-          <h3>Python</h3>
-          
+      <div class="results" id="python">
+        <h3>Python</h3>
+        <div class="about">
+          <p>
+            Python is a very popular language that offers career flexibility and a good basis for understanding the logic behind programming. 
+            It is used by the likes of Facebook and Google, and many other big companies. Job opportunity galore! It also has one of the 
+            highest average salaries behind Ruby and Matlab! But remember, most languages are lucrative and desirable skills so don’t let that 
+            factor too much into your final choice! It is great for creating prototypes quickly, but is also used for more robust ventures like 
+            machine learning and data science.
+          </p>
         </div>
-        <div id="javascript">
-          <h3>JavaScript</h3>
+        <div class="use">
+          <h4>What is it used for?</h4>
+          <ul>
+            <li>Web Development</li>
+            <li>Video Game Development</li>
+            <li>Desktop Graphic User Interfaces</li>
+            <li>Software Development</li>
+            <li>Machine Learning and Artificial Intellignece</li>
+          </ul>
         </div>
-        <div id="csharp">
-          <h3>C#</h3>
+        <div class="pros">
+          <h4>Pros of Python</h4>
+          <ol>
+            <li>Easy to learn</li>
+            <li>Simple concise syntax</li>
+            <li>A lot of documentation and a big community for support</li>
+            <li>Extensive libraries, tools, and functionality</li>
+            <li>Use in the Internet of Things</li>
+            <li>Ability ot scale projects</li>
+            <li>Support of multiple platforms and systems</li>
+          </ol>
+        </div>
+        <div class="cons">
+          <h4>Cons of Python</h4>
+          <ol>
+            <li>Slower than compiled languages</li>
+            <li>Low memory management</li>
+            <li>Poor mobile computing-not used in many smartphone apps</li>
+            <li>Language design requires more testing and has more errors</li>
+            <li>Starting with its simple syntax can make future languages harder</li>
+          </ol>
+        </div>
+        <div class="examples">
+          <h4>Some things built with Python:</h4>
+          <p>Instagram - Spotify - Dropbox - Reddit</p>
         </div>
       </div>
+
+      <div class="results" id="javascript">
+        <h3>JavaScript</h3>
+        <div class="about">
+          <p>
+            Great for aspiring web developers. You seem like a great fit for front end design with your strong intuition and communication 
+            skills. And while jQuery and Angular frameworks can help with client-side endeavors, NodeJS can also be used for any back-end programming. 
+            This is one of the most sought after languages across the United States, so you could work almost anywhere! You'll be 
+            able to create dynamic content, control multimedia, and be able to create everything you see on other websites. We suggest you 
+            learn this one alongside HTML and CSS since JavaScript is commonly embedded into HTML code. If interactivity is your name, JavaScript 
+            is your game!
+          </p>
+        </div>
+        <div class="use">
+          <h4>What is it used for?</h4>
+          <ul>
+            <li>Front End of Websites</li>
+            <li>Analytics</li>
+            <li>Widgets</li>
+            <li>Web Interactivity</li>
+          </ul>
+        </div>
+        <div class="pros">
+          <h4>Pros of JavaScript</h4>
+          <ol>
+            <li>A great StackOverflow community ready to answer your questions</li>
+            <li>Relative simplicity makes it more accessible for new programmers</li>
+            <li>Versatility with the ability to be used with many other languages and for different applications</li>
+            <li>Speed thanks to client-side nature</li>
+          </ol>
+        </div>
+        <div class="cons">
+          <h4>Cons of JavaScript</h4>
+          <ol>
+            <li>Security due to user execution that may be exploited</li>
+            <li>Reliance on user causes unpredictable client-side scripts (be sure to test!)</li>
+            <li>Interpreted differently by different browsers</li>
+            <li>Single errors can stop the entire JavaScript code from rendering</li>
+          </ol>
+        </div>
+        <div class="examples">
+          <h4>Some things built with JavaScript:</h4>
+          <p>PayPal - YouTube - Wikipedia - LinkedIn</p>
+        </div>
+      </div>
+
+      <div class="results" id="csharp">
+        <h3>C#</h3>
+        <div class="about">
+          <p>
+            C# is powerful and flexible, and able to make many different applications only limited by your own imagination. 
+            With no constraints you can make anything from websites, developer tools, to compilers. It is just behind Java 
+            when it comes to employer demand, so you'll be a highly sought-after candidate. Your creative energy is sure to 
+            shine if you don't mind a bit of a challenge! It is also a great language for anyone hoping to work at Microsoft.
+            Your emphasis on simplicity and efficiency makes you and C# a perfect match!
+          </p>
+        </div>
+        <div class="use">
+          <h4>What is it used for?</h4>
+          <ul>
+            <li>Windows Applications</li>
+            <li>Business Enterprise Applications</li>
+            <li>Software Development</li>
+            <li>Video Games</li>
+          </ul>
+        </div>
+        <div class="pros">
+          <h4>Pros of C#</h4>
+          <ol>
+            <li>Statistically-typed so errors are detected before applications go live</li>
+            <li>Scalable and easy to maintain</li>
+            <li>A large, helpful community</li>
+            <li>Windows .NET framework integration for great functionality and support</li>
+            <li>Transferable language that offers a springboard to Java, Objective C, PHP, and C++</li>
+            <li>High demand</li>
+          </ol>
+        </div>
+        <div class="cons">
+          <h4>Cons of C#</h4>
+          <ol>
+            <li>Steeper learning curve for newcomers</li>
+            <li>Loss of cross-platform capabilities due to .NET integration</li>
+            <li>Proprietary, upfront cost to purchase software</li>
+            <li>Runs slowly and needs to be compiled each time changes are made</li>
+          </ol>
+        </div>
+        <div class="examples">
+          <h4>Some things built with C#:</h4>
+          <p>StackOverflow - Evernote - Microsoft Visual Studio</p>
+        </div>
+      </div>
+
+    
 
 
     </div>
@@ -50,4 +202,10 @@
 
 <!--References
 https://www.inc.com/larry-kim/how-to-choose-which-programming-language-to-learn-infographic.html
+https://medium.com/the-mission/new-to-coding-which-programming-language-is-right-for-you-f506638aa36e
+https://learn.g2.com/most-popular-programming-languages
+https://dev.to/selawsky/top-5-popular-programming-languages-to-learn-1gij
+https://www.pluralsight.com/blog/software-development/everything-you-need-to-know-about-c-
+https://data-flair.training/blogs/advantages-disadvantages-javascript/
+https://www.guru99.com/java-vs-c-sharp-key-difference.html#11
 -->
