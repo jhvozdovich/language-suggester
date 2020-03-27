@@ -10,20 +10,25 @@ $(document).ready(function() {
   $("form#responses").submit(function(event){
     event.preventDefault();
 
+    var goal = $("#goal").val();
     var difficulty = $("input:radio[name=difficulty]:checked").val();
     var interest = $("#interest").val();
+    var project = $("input:radio[name=projct]:checked").val();
+    var platform = $("#platform").val();
 
-    if ((difficulty === "easy") && (interest === "Back-End" || interest === "Both")) {
+    if ((difficulty === "easy") && (interest !== "Front-End") || (project === "data") || (platform === "Desktop")) {
       $(".quiz").hide();
       $("#python").show();
-    } else if ((difficulty === "easy" || difficulty === "medium") && (interest === "Front-End" || interest === "Both")) {
+    } else if ((difficulty !== "hard") && (interest === "Front-End" || interest === "Both") || (project === "websites") || (platform === "Web")) {
       $(".quiz").hide();
       $("#javascript").show();
-    } else if ((difficulty === "hard") ) {
+    } else if ((goal !== "maker") && (difficulty === "hard") || (project === "games" || project === "desktop") || (platform !== "Web")) {
       $(".quiz").hide();
       $("#csharp").show();
     } else {
-      alert("Please complete the quiz!")
+      $(".quiz").hide();
+      alert("Wow you have some diverse tastes! We're not sure where to place you. Here are all of our options!")
+      $(".results").show();
     }
   })  
 })
